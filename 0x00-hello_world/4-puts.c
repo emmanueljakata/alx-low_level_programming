@@ -1,13 +1,15 @@
 #include <stdio.h>
-int main(void)
+
 /**
- * main - Entry point
+ * main - Entry Point
  *
- * Description: 'Program to print using puts instead of printf'
+ * Description: Program to print using puts instead of printf
  *
  * Return: 0 (Success)
  */
+
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	return (0);
 }
