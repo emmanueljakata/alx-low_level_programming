@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description - Asigning a random number to variable n its status
+ * Description - Asigning a random number to variable n and showing its status
  *
  * Return: 0 (Success)
  */
@@ -15,7 +15,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%d", n);
+	printf("%d ", n);
 	if (n > 0)
 		printf("is positive");	
 	else if (n == 0)
