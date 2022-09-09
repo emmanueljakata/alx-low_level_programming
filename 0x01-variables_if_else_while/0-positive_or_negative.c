@@ -5,8 +5,6 @@
 /**
  * main - Entry point
  *
- * Description - Asigning a random number to variable n and showing its status
- *
  * Return: 0 (Success)
  */
 int main(void)
