@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 /**
  * main - Entry point
  * Discription - program that prints _putchar
@@ -7,5 +7,5 @@
 int _putchar(char c)
 
 {
-	return (write(1, &c, 1));
+	return(write(1, &c, 1));
 }
