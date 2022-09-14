@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_sign - function that prints the sign of a number
- * @c: character to be verified
+ * print_sign - prints sign of a number
+ * @n: character to be verified
  * Return: return 0 or 1
  */
 
