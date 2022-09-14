@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description - print alphabet
- * Return: 0 (success)
+  * print_alphabet - print alphabet
  */
+
 void print_alphabet(void)
 {
 	int u;
