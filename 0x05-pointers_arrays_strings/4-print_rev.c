@@ -2,7 +2,7 @@
 
 /**
  * print_rev - prints a string, in reverse
- * @str: string to be printed on screen
+ * @s: string to be printed on screen
  * Return: void
  */
 
@@ -10,6 +10,7 @@ void print_rev(char *s)
 
 {
 	int revs;
+
 	revs = 0;
 
 	while (*(s + revs) != '\0')
