@@ -8,12 +8,16 @@
 
 void print_rev(char *s)
 {
-	int revs = 0;
+	int count = 0, i, temp = 0;
 
-	while (*(s + revs) != '\0')
+	while (*(s + count) != '\0')
 	{
-		putchar(*(s + revs));
-		revs--;
+		count++;
 	}
-	putchar('\n');
+	for (i = 0 ; i <= ((count - 1) / 2) ; i++)
+	{
+		temp = *(s + i);
+		*(s + i) = *(s + (count - (i + 1)));
+		*(s + (count - (i + 1))) = temp;
+	}
 }
