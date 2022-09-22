@@ -7,20 +7,20 @@
  * @src: string to append to dest
  * Return: pointer to dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
-	i = j = 0;
-
-	while (*(dest + i))
-		i++;
-
-	while ((*(dest + i) = *(src + j)))
+	i = 0;
+	while (dest[i] != '\0')
 	{
 		i++;
-		j++;	
 	}
-	
+	for (j = 0; src[j] != '\0'; j++, i++)
+	{
+		dest[i] = src[j];	
+	}
+	dest[i] = '\0';
 	return (dest);
 }

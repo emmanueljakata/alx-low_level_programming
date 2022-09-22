@@ -8,16 +8,16 @@ nclude "main.h"
  * Return: the converted string
  */
 
-char *string_toupper(char *c)
+char *string_toupper(char *s)
 {
 	int i;
 
-	i = 0;
-	while (c[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (c[i] >= 'a' && c[i] <= 'z')
-			c[i] -= 'a' - 'A';
-		i++;
+		if ((s[i] >= 'a') && (s[i] <= 'z'))
+		{
+			s[i] = s[i] - 32;
+		}
 	}
-	return (c);
+	return (s);
 }
