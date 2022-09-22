@@ -5,24 +5,25 @@
  *
  * @dest: pointer to the destination string
  *
+ * @src: the secod string
+ *
  * @n: number of bytes to print
  *
  * Return: pointer to the resulting string dest
  */
 
-char *_strncat(char *dest, char *src, int n)
-{
-	int i, j;
+char *_strcat(char *dest, char *src)
 
-	i = 0;
-	while (dest[i] != '\0')
+{
+	int dest_len = strlen(dest);
+	int i;
+
+	for (i = 0 ; src[i] != '\0' ; i++)
 	{
-		i++;
+		dest[dest_len + i] = src[i];
 	}
-	for (j = 0; j < n && src[j] != '\0'; j++, i++)
-	{
-		dest[i] = src[j];
-	}
-	dest[i] = '\0';
+
+	dest[dest_len + i] = '\0';
+
 	return (dest);
 }
