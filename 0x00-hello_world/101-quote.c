@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description - A Quote
- * 
+ *
  * Return: 1 (Success)
  */
 
